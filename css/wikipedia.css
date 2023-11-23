@@ -218,10 +218,60 @@ img {
   fill: #36c;
 }
 
-.search-form2 {
+.search-form-2 {
+  display: flex;
+  min-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #a2a9b1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem .8rem ;
+  color: rgb(51, 102, 204);
+  background-color: #f8f9fa;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search-form-2:hover {
+  background-color: #fff;
+  border-color: #a2a9b1;
+}
+
+.search-form-2 img, .search-form-2 svg {
+  max-width: 22px;
+  color: inherit;
+}
+
+.search-form-2 svg {
+  fill: currentColor;
+  max-width: 18px;
+  transition: all ease-in-out .3s;
+}
+
+
+.container-search-form-2 {
+  display: flex;
   width: 100%;
-  text-align: center;
+  max-width: 580px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 1rem;
   margin-top: 30px;
+  margin-bottom: 30px;
+  transition: all ease-in-out .3s;
+}
+
+.max-width-80vw {
+  max-width: 80vw;
+}
+
+.line, .line-section {
+  min-width: 8rem;
+  height: 1px;
+  width: 100%;
+  background-color: #c8ccd1;
 }
 
 .section-search-languages {
@@ -237,7 +287,6 @@ img {
 }
 
 .button-svg-2 {
-  width: 269px;
   padding: 6px 12px;
   margin: 1px;
   border: 1px solid #a2a9b1;
@@ -441,4 +490,56 @@ img {
 
 .enlace-section-finish {
   color: royalblue;
+}
+
+.container-dropdown-more-languages {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  padding-top: 0;
+  margin-top: -3rem;
+  transition: all ease-in-out .3s;
+}
+
+.display-none {
+  display: none;
+}
+
+.container-dropdown-more-languages a {
+  text-decoration: none;
+}
+
+.title-section-dropdown-languages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.title-section-dropdown-languages span {
+  min-width: fit-content;
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.content-section-dropdown-languages {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) );
+  row-gap: .5rem;
+  column-gap: 1rem;
+}
+
+.footer-section-dropdown-languages {
+  display: flex;
+  width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  justify-content: center;
 }
